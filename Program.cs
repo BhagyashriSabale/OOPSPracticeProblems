@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome OOPS Array Practice Problem");
             Console.WriteLine("Choose 1 Program from below list:");
-            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax\n4.Pattern1\n5.Pattern2\n6.ReverseString");
+            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax\n4.Pattern1\n5.Pattern2\n6.ReverseString\n7.SumallofDigit");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -33,6 +33,10 @@
                 case 6:
                     ReverseS reverse = new ReverseS();
                     reverse.ReverseString();
+                    break;
+                case 7:
+                    Sum sum = new Sum();
+                    sum.SumOfAllNumbers();
                     break;
             }
         }
