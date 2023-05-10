@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome OOPS Array Practice Problem");
             Console.WriteLine("Choose 1 Program from below list:");
-            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax");
+            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax\n4.Pattern1");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -21,6 +21,10 @@
                 case 3:
                     FindMinMax max = new FindMinMax();
                     max.MinMax();
+                    break;
+                case 4:
+                    Pattern1 pattern = new Pattern1();
+                    pattern.PatternStar();
                     break;
             }
         }
