@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome OOPS Array Practice Problem");
             Console.WriteLine("Choose 1 Program from below list:");
-            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax\n4.Pattern1");
+            Console.WriteLine("1.CountofDuplicates\n2.UniqueElements\n3.FindMinMax\n4.Pattern1\n5.Pattern2");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -25,6 +25,10 @@
                 case 4:
                     Pattern1 pattern = new Pattern1();
                     pattern.PatternStar();
+                    break;
+                case 5:
+                    Pattern2 pattern2 = new Pattern2();
+                    pattern2.StarPattern();
                     break;
             }
         }
